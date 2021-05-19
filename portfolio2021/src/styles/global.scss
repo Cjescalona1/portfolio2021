@@ -1,0 +1,157 @@
+// https://bit.ly/3aI9YSD - universal box-sizing with inheritance.
+html {
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+*{
+  font-family: 'Poppins', sans-serif;
+}
+html,
+body {
+  margin: 0;
+  padding: 0;
+  font: 16px 'Open Sans', Arial, Helvetica, sans-serif;
+}
+
+.hero{
+  position: relative; 
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  padding: 5% 7%;
+  
+  height: 100vh;
+  width: 100%;
+
+  background-image: url('../assets/BG.jpg');
+  background-size: cover;
+  opacity: 0.5;
+  
+  display: flex;
+  justify-content: center;
+}
+
+@media (max-width: 600px) {
+  .Head{
+    list-style: none;
+    font-size: 1em;
+    font-weight: thin; 
+    height:5% !important; 
+    background-color:transparent !important;
+  }
+  .Head > ul{
+  display: none;
+  }
+  .Head> ul > li{
+  display: none;
+ }
+
+
+ .intro{
+  font-size: small; 
+  text-align: center;  
+  padding: 10% 30%;
+  }
+}
+
+@media (max-width: 1030px) and (min-width: 600px) {
+
+
+ .intro{
+  font-size: medium; 
+  text-align: center;  
+  padding: 10% 30%;
+  }
+
+  .Head{
+    height: 7% !important;
+    list-style: none;
+    font-size: 1em;
+    font-weight: lighter; 
+  }
+  .Head> ul > li{
+    
+  display: none;
+ }
+}
+
+
+/*HEADER*/
+.Head{
+      z-index:100;
+      position: fixed;
+      height: 10%;
+      width: 100%;
+      background-color: rgba(122, 122, 122, 0.74);
+    }
+
+.Head > ul{
+  display: flex;
+  justify-content: space-evenly;
+  }
+
+.Head> ul > li{
+  list-style: none;
+  font-size: 2.5em;
+  font-weight: bold;
+ }
+
+ /* unvisited link */
+a:link, a:visited, a:hover, a:active{
+  text-decoration: none;
+  color: rgb(119, 119, 119);
+}
+
+
+.CE-font{
+  color:rgb(182, 182, 182);
+  text-shadow:2px 2px gray;
+  text-align: center;
+  font-size: 5em;
+  margin: 10% 0 0 0;
+}
+
+.DEV-font{
+  color:rgb(160, 160, 160);
+  margin: 0;
+}
+
+
+
+pre {
+  background: #000;
+  color: white;
+  font-family: monospace;
+  padding: 1ch;
+}
+
+pre.caret-bar > span {
+  animation: blink 1s step-end infinite;
+  border-left: 2px solid white;
+}
+
+@keyframes blink {
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: #fff;
+  }
+}
+
+.intro{
+text-align: center;  
+padding: 5% 30%;
+}
+
+.container{
+  display: block;
+  
+}
