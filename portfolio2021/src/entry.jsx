@@ -9,6 +9,10 @@
   Import our top-level scss file.
   All other scss files should be imported in `styles.scss`.
 */
+/*
+<Head/>
+
+*/
 import './styles/styles.scss'
 
 // Import React.
@@ -20,7 +24,6 @@ import App from 'components/App'
 // Mount our app.
 ReactDOM.render(
   <React.StrictMode>
-    <Head/>
     <App />
   </React.StrictMode>,
   document.querySelector('#app'),

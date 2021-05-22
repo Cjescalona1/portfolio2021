@@ -16,6 +16,8 @@ body {
   margin: 0;
   padding: 0;
   font: 16px 'Open Sans', Arial, Helvetica, sans-serif;
+  background: rgb(176,175,180);
+  background: linear-gradient(90deg, rgba(176,175,180,1) 0%, rgba(255,255,255,1) 28%, rgba(200,205,207,1) 100%);
 }
 
 .hero{
@@ -29,9 +31,6 @@ body {
   height: 100vh;
   width: 100%;
 
-  background-image: url('../assets/BG.jpg');
-  background-size: cover;
-  opacity: 0.5;
   
   display: flex;
   justify-content: center;
@@ -85,7 +84,7 @@ body {
 /*HEADER*/
 .Head{
       z-index:100;
-      position: fixed;
+      position: absolute;
       height: 10%;
       width: 100%;
       background-color: rgba(122, 122, 122, 0.74);
@@ -125,7 +124,7 @@ a:link, a:visited, a:hover, a:active{
 
 
 pre {
-  background: #000;
+  background: #777777;
   color: white;
   font-family: monospace;
   padding: 1ch;
@@ -149,9 +148,23 @@ pre.caret-bar > span {
 .intro{
 text-align: center;  
 padding: 5% 30%;
+color: #777;
+}
+
+
+.logoHead{
+    position: relative;
+    height: 80%; 
+}
+
+.carou{ 
+  display: flex;
+  justify-content: space-around;
+  padding: 0 50%;
+  width: 60%;
+  height: 30%; 
 }
 
 .container{
-  display: block;
-  
+  padding: 3%;
 }

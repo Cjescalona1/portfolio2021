@@ -1,37 +1,28 @@
-import Link from '@material-ui/core/Link';
+ 
 
+import {
+  BrowserRouter as 
+  Link
+} from "react-router-dom";
 export default function Head() {
 return (
-<div className="Head">
-         <ul>  
+      <div className="Head">
+          <ul>
               <li>
-              <a href="http://www.google.com" >
-                Home
-              </a>
+              <Link to="/">Home</Link>
               </li>
               <li>
-              <a href="http://www.google.com" >
-                About me
-              </a>
-              </li>
-
-                <div>
-                    LOGO
-                </div>
-
-              <li>
-              <a href="http://www.google.com" >
-                Proyects and Demos
-              </a>
+              <Link to="/About">About</Link>
               </li>
               <li>
-              <a href="http://www.google.com" >
-                Contacto
-              </a>
+              <Link to="/Proyect">Proyect</Link>
               </li>
+              <li>
+              <Link to="/Contact">Contact</Link>
+              </li>  
           </ul>
       </div>
-
     )
   }
 
+ 

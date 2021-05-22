@@ -242,6 +242,11 @@ module.exports = (env, argv) => ({
         ].filter(Boolean),
       },
 
+
+      {
+        test: /\.css$/i,
+        use: ["style-loader", "css-loader"],
+      },
       /*
         FONTS
         -----
